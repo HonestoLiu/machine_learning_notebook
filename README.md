@@ -10,9 +10,9 @@ $$accuracy=\frac{1}{m}\sum_{i=1}^m I(f(x_i)=y_i)$$
 |真实情况-预测结果|正例|反例|
 |-|-|-|
 |正例|TP(真正例)|FN(假反例)|
-|反例|FP(假正例)|FN(真反例)|
+|反例|FP(假正例)|TN(真反例)|
 
-查准率$P=\frac{TP}{TP+FP}$，查全率$R=\frac{TP}{TP+FN}$，折中度量$\frac{1}{F1}=\frac{1}{2}(\frac{1}{R}+\frac{2}{P}).$  
+查准率$P=\frac{TP}{TP+FP}$，查全率$R=\frac{TP}{TP+FN}$，折中度量$\frac{1}{F1}=\frac{1}{2}(\frac{1}{R}+\frac{1}{P}).$  
 对于多次试验得到多个混淆矩阵，先算P-R后平均的称**macro**，先平均后算P-R的称**micro**.
 
 - ROC、AUC  
